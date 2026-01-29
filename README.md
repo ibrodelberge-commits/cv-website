@@ -4,7 +4,7 @@ Personal CV/portfolio website showcasing my experience in IT, Data Management, a
 
 ## 🌐 Live Demo
 
-Visit the live website: [Coming soon - GitHub Pages]
+Visit the live website: https://ibrodelberge-commits.github.io/cv-website/
 
 ## ✨ Features
 
