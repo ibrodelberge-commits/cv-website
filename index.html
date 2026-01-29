@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivor Rödel - IT Professional | Servicedesk & Applicatiebeheer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <!-- Decorative Bar Chart Background -->
+        <div class="hero-bars" aria-hidden="true">
+            <div class="bar" style="--height: 45%; --delay: 0s;"></div>
+            <div class="bar" style="--height: 70%; --delay: 0.1s;"></div>
+            <div class="bar" style="--height: 55%; --delay: 0.2s;"></div>
+            <div class="bar" style="--height: 85%; --delay: 0.3s;"></div>
+            <div class="bar" style="--height: 40%; --delay: 0.4s;"></div>
+            <div class="bar" style="--height: 95%; --delay: 0.5s;"></div>
+            <div class="bar" style="--height: 60%; --delay: 0.6s;"></div>
+            <div class="bar" style="--height: 75%; --delay: 0.7s;"></div>
+            <div class="bar" style="--height: 50%; --delay: 0.8s;"></div>
+            <div class="bar" style="--height: 80%; --delay: 0.9s;"></div>
+            <div class="bar" style="--height: 35%; --delay: 1.0s;"></div>
+            <div class="bar" style="--height: 90%; --delay: 1.1s;"></div>
+            <div class="bar" style="--height: 65%; --delay: 1.2s;"></div>
+            <div class="bar" style="--height: 45%; --delay: 1.3s;"></div>
+            <div class="bar" style="--height: 70%; --delay: 1.4s;"></div>
+        </div>
+        <div class="hero-content">
+            <div class="profile-image">
+                <div class="profile-placeholder">IR</div>
+            </div>
+            <h1>Ivor Rödel</h1>
+            <p class="tagline" data-i18n="hero.tagline">IT Professional | Datamanagement & Applicatiebeheer</p>
+            <p class="subtitle" data-i18n="hero.subtitle">Van Servicedesk naar Datamanagement met passie voor automatisering en dashboard development</p>
+            <div class="contact-info">
+                <a href="mailto:ivor_rodel@hotmail.nl" class="contact-item">
+                    <span class="icon">✉️</span>
+                    <span>ivor_rodel@hotmail.nl</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ivor-rodel-500b6ab3/" target="_blank" class="contact-item linkedin-item">
+                    <span class="icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <span class="contact-item">
+                    <span class="icon">📍</span>
+                    <span>Amersfoort</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#over-mij" data-i18n="nav.about">Over Mij</a></li>
+            <li><a href="#vaardigheden" data-i18n="nav.skills">Vaardigheden</a></li>
+            <li><a href="#werkervaring" data-i18n="nav.experience">Werkervaring</a></li>
+            <li><a href="#opleidingen" data-i18n="nav.education">Opleidingen</a></li>
+            <li><a href="#hobbys" data-i18n="nav.hobbies">Hobby's</a></li>
+            <li><a href="#projecten" data-i18n="nav.projects">Projecten</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <div class="lang-toggle-pill" id="langToggle" aria-label="Toggle language">
+                <span class="lang-option" data-lang="nl">NL</span>
+                <span class="lang-option" data-lang="en">EN</span>
+                <span class="lang-slider"></span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon-dark">☀️</span>
+                <span class="theme-icon-light">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Stats Dashboard -->
+        <section class="section">
+            <div class="container">
+                <div class="stats-dashboard">
+                    <div class="stat-card blue">
+                        <div class="stat-value">5+</div>
+                        <div class="stat-label" data-i18n="stats.experience">Jaren Ervaring</div>
+                    </div>
+                    <div class="stat-card green">
+                        <div class="stat-value">20+</div>
+                        <div class="stat-label" data-i18n="stats.clients">Klanten</div>
+                    </div>
+                    <div class="stat-card purple">
+                        <div class="stat-value">4</div>
+                        <div class="stat-label" data-i18n="stats.markets">Internationale Markten</div>
+                    </div>
+                    <div class="stat-card orange">
+                        <div class="stat-value">27+</div>
+                        <div class="stat-label" data-i18n="stats.dashboards">Live Dashboards Gebouwd</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Over Mij Section -->
+        <section id="over-mij" class="section section-alt">
+            <!-- Decorative Hexagon Grid Background -->
+            <div class="hexagon-bg" aria-hidden="true">
+                <div class="hex-row">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row offset">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row offset">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 data-i18n="about.title">Over Mij</h2>
+                <div class="about-content">
+                    <p class="intro-text" data-i18n="about.intro">
+                        Ik ben Ivor, een nieuwsgierige IT'er die het liefst de hele dag puzzelt aan <strong>data en automatisering</strong>. 
+                        Van jongs af aan gefascineerd door technologie – of het nu ging om game addons bouwen of mijn eerste scripts schrijven. 
+                        Die passie heb ik omgezet in een carrière waarin ik dagelijks bedrijfsprocessen optimaliseer en data omzet in bruikbare inzichten.
+                    </p>
+                    <div class="highlights">
+                        <div class="highlight-card">
+                            <span class="highlight-icon">📊</span>
+                            <h3 data-i18n="about.data.title">Data & BI</h3>
+                            <p data-i18n="about.data.desc">PowerBI dashboards en data pipelines voor internationale klanten in 4 markten.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-icon">⚡</span>
+                            <h3 data-i18n="about.automation.title">Automatisering</h3>
+                            <p data-i18n="about.automation.desc">Python scripts, API integraties en automatische dataverzameling voor real-time inzichten.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-icon">🔧</span>
+                            <h3 data-i18n="about.apps.title">Applicatiebeheer</h3>
+                            <p data-i18n="about.apps.desc">Onderhoud en beheer van ERP/CRM systemen met focus op stabiliteit en performance.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-icon">🤝</span>
+                            <h3 data-i18n="about.team.title">Teamspeler</h3>
+                            <p data-i18n="about.team.desc">Ervaring met het trainen van collega's en het opstellen van documentatie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vaardigheden Section -->
+        <section id="vaardigheden" class="section section-alt">
+            <!-- Decorative Hexagon Grid Background -->
+            <div class="hexagon-bg" aria-hidden="true">
+                <div class="hex-row">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row offset">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row offset">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row offset">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+                <div class="hex-row offset">
+                    <div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div><div class="hex"></div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 data-i18n="skills.title">Technische Vaardigheden</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.programming">Programmeertalen & Scripting</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">LUA</span>
+                            <span class="skill-tag">Pascal</span>
+                            <span class="skill-tag">AutoIT</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Batch Scripting</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.databi">Data & Business Intelligence</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PowerBI</span>
+                            <span class="skill-tag">Live Dashboard Development</span>
+                            <span class="skill-tag">Data Warehousing</span>
+                            <span class="skill-tag">ETL / Data Pipelines</span>
+                            <span class="skill-tag" data-i18n="skill.datacollection">Geautomatiseerde Data Collectie</span>
+                            <span class="skill-tag">JSON / CSV / SQL</span>
+                            <span class="skill-tag" data-i18n="skill.reporting">Rapportage & Visualisatie</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.appmanagement">Applicatiebeheer & Integratie</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-i18n="skill.topdesk">TopDesk (Beheer & Inrichting)</span>
+                            <span class="skill-tag" data-i18n="skill.api">API Architectuur & Koppelingen</span>
+                            <span class="skill-tag" data-i18n="skill.selfservice">SelfService Portaal Beheer</span>
+                            <span class="skill-tag" data-i18n="skill.ticketing">Ticketsysteem Configuratie</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.devops">Development & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Application Development</span>
+                            <span class="skill-tag">GIT Version Control</span>
+                            <span class="skill-tag" data-i18n="skill.webhosting">Webhosting & Server Beheer</span>
+                            <span class="skill-tag">Remote Access Tools (VNC)</span>
+                            <span class="skill-tag">AI / Machine Learning</span>
+                            <span class="skill-tag" data-i18n="skill.automation">Automatisering</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.itsm">IT Service Management</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Servicedesk Operations</span>
+                            <span class="skill-tag">SLA Management</span>
+                            <span class="skill-tag">P1 Incident Handling</span>
+                            <span class="skill-tag" data-i18n="skill.customersupport">Klant Support</span>
+                            <span class="skill-tag" data-i18n="skill.documentation">Documentatie & Training</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.languages">Talen</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag language" data-i18n="skill.dutch">Nederlands (Native)</span>
+                            <span class="skill-tag language" data-i18n="skill.english">Engels (Proficient)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Werkervaring Section -->
+        <section id="werkervaring" class="section">
+            <!-- Decorative Growth Line Background -->
+            <div class="growth-line-bg" aria-hidden="true">
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="growthGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color: var(--accent-green); stop-opacity: 0.3" />
+                            <stop offset="100%" style="stop-color: var(--accent-blue); stop-opacity: 0.1" />
+                        </linearGradient>
+                    </defs>
+                    <path class="growth-line" d="M0,80 Q15,75 25,60 T50,45 T75,25 T100,10" />
+                    <path class="growth-line-fill" d="M0,80 Q15,75 25,60 T50,45 T75,25 T100,10 L100,100 L0,100 Z" />
+                </svg>
+            </div>
+            <div class="container">
+                <h2 data-i18n="experience.title">Werkervaring</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 data-i18n="exp.acrelec.title">Datamanagement & Applicatiebeheer</h3>
+                                <span class="company">ACRELEC</span>
+                                <span class="period" data-i18n="exp.acrelec.period">2025 - Heden</span>
+                                <span class="location">Nijkerk, Gelderland</span>
+                            </div>
+                            <p class="company-description" data-i18n="exp.acrelec.desc">
+                                Doorgegroeid van Senior Servicedesk Engineer naar Datamanagement & Applicatiebeheer, 
+                                verantwoordelijk voor meerdere internationale markten.
+                            </p>
+                            <div class="responsibilities">
+                                <h4 data-i18n="exp.h4.funcapp">Functioneel Applicatiebeheer:</h4>
+                                <ul>
+                                    <li data-i18n="exp.acrelec.task1">TopDesk ingericht voor de organisatie</li>
+                                    <li data-i18n="exp.acrelec.task2">API koppelingen opgezet tussen TopDesk en andere applicaties/organisaties</li>
+                                    <li data-i18n="exp.acrelec.task3">TopDesk SelfService portaal inrichten voor klanten</li>
+                                </ul>
+                                <h4 data-i18n="exp.h4.bi">Business Intelligence & Rapportage:</h4>
+                                <p class="subsection-intro" data-i18n="exp.acrelec.biintro">Solo verantwoordelijk voor PowerBI rapportages en live dashboards voor ticket registratie systemen:</p>
+                                <div class="client-grid">
+                                    <div class="client-region">
+                                        <strong data-i18n="exp.region.nl">Nederland:</strong>
+                                        <span class="client-list">KFC, Burger King, McDonald's, Pathé, VUE Cinemas, CenterParcs, FatPhil's, FCKip, HFC, Deichmann</span>
+                                    </div>
+                                    <div class="client-region">
+                                        <strong data-i18n="exp.region.be">België:</strong>
+                                        <span class="client-list">KFC, Burger King, Quick, TotalEnergies, MyLine</span>
+                                    </div>
+                                    <div class="client-region">
+                                        <strong>UAE:</strong>
+                                        <span class="client-list">Jollibee, Burger King, Five Guys, Jordan's</span>
+                                    </div>
+                                    <div class="client-region">
+                                        <strong data-i18n="exp.region.es">Spanje:</strong>
+                                        <span class="client-list">McDonald's</span>
+                                    </div>
+                                    <div class="client-region global">
+                                        <strong data-i18n="exp.region.global">Internationaal:</strong>
+                                        <span class="client-list" data-i18n="exp.region.global.desc">Data collectie en API architectuur voor McDonald's Global</span>
+                                    </div>
+                                </div>
+                                <h4 data-i18n="exp.h4.dataeng">Data Engineering & Automatisering:</h4>
+                                <ul>
+                                    <li data-i18n="exp.acrelec.data1">Applicaties en scripts ontwikkeld voor geautomatiseerde data collectie</li>
+                                    <li data-i18n="exp.acrelec.data2">Data opslag in meerdere formaten: JSON, CSV en SQL</li>
+                                    <li data-i18n="exp.acrelec.data3">Volledig geautomatiseerd data pipeline beheer</li>
+                                </ul>
+                                <h4 data-i18n="exp.h4.softdev">Software Development:</h4>
+                                <ul>
+                                    <li data-i18n="exp.acrelec.soft1">Ontwikkelen van applicaties om Servicedesk werkzaamheden te optimaliseren</li>
+                                    <li data-i18n="exp.acrelec.soft2">VNC Remote Access tool: automatisch invullen van IP-adressen en credentials op basis van locatie- en devicenummer</li>
+                                </ul>
+                                <h4 data-i18n="exp.h4.server">Server & Infrastructuur Beheer:</h4>
+                                <ul>
+                                    <li data-i18n="exp.acrelec.serv1">Beheer fileserver als DataWarehouse</li>
+                                    <li data-i18n="exp.acrelec.serv2">GIT Updates server voor applicatie distributie</li>
+                                    <li data-i18n="exp.acrelec.serv3">Webhosting voor live dashboard pagina's</li>
+                                    <li data-i18n="exp.acrelec.serv4">Login server voor credential management</li>
+                                </ul>
+                                <h4 data-i18n="exp.h4.support">Support & Kennisdeling:</h4>
+                                <ul>
+                                    <li data-i18n="exp.acrelec.sup1">Ondersteuning van collega's en klanten met TopDesk gebruikersvragen</li>
+                                    <li data-i18n="exp.acrelec.sup2">Beantwoorden van diepgaand technische vragen over data en rapportages</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 data-i18n="exp.acrelec2.title">Senior Servicedesk Engineer</h3>
+                                <span class="company">ACRELEC</span>
+                                <span class="period" data-i18n="exp.acrelec2.period">2020 - Heden</span>
+                                <span class="location">Nijkerk, Gelderland</span>
+                            </div>
+                            <p class="company-description" data-i18n="exp.acrelec2.desc">
+                                Acrelec ontwikkelt en verkoopt self-service point of sale systemen voor grote klanten zoals 
+                                McDonalds, KFC en Burger King. Sinds 2025 gecombineerd met Datamanagement taken.
+                            </p>
+                            <div class="responsibilities">
+                                <h4 data-i18n="exp.h4.core">Kernverantwoordelijkheden:</h4>
+                                <ul>
+                                    <li data-i18n="exp.acrelec2.core1">Gemiddeld 40-50 klanten telefonisch te woord staan per dag</li>
+                                    <li data-i18n="exp.acrelec2.core2">Behandelen van complexe en P1 tickets</li>
+                                    <li data-i18n="exp.acrelec2.core3">Schakelen met derde partijen waar nodig</li>
+                                    <li data-i18n="exp.acrelec2.core4">Training van Junior Servicedesk Engineers</li>
+                                    <li data-i18n="exp.acrelec2.core5">Opstellen van up-to-date troubleshooting documentatie</li>
+                                </ul>
+                                <h4 data-i18n="exp.h4.autodev">Automatisering & Ontwikkeling:</h4>
+                                <ul>
+                                    <li data-i18n="exp.acrelec2.auto1">Remote Access batch scripts ontwikkeld in C</li>
+                                    <li data-i18n="exp.acrelec2.auto2">AI-based Python script voor automatische categorisatie en SLA correctie van TopDesk tickets</li>
+                                </ul>
+                                <h4 data-i18n="exp.h4.oncall">Consignatiedienst:</h4>
+                                <ul>
+                                    <li data-i18n="exp.acrelec2.oncall1">Maandag t/m donderdag: 17:30 - 02:30</li>
+                                    <li data-i18n="exp.acrelec2.oncall2">24 uur bereikbaar van vrijdag t/m zondag</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 data-i18n="exp.optinet.title">Hulpmonteur Datatechniek</h3>
+                                <span class="company" data-i18n="exp.optinet.company">Optinet - Glasvezel, netwerkbekabeling, wifi- en datanetwerken</span>
+                                <span class="period" data-i18n="exp.optinet.period">2019 - 2020</span>
+                            </div>
+                            <p class="company-description" data-i18n="exp.optinet.desc">
+                                Optinet installeert patchkasten en legt netwerkkabels aan in bedrijven.
+                            </p>
+                            <ul>
+                                <li data-i18n="exp.optinet.task1">Glasvezel lassen</li>
+                                <li data-i18n="exp.optinet.task2">RJ45 afmontage</li>
+                                <li data-i18n="exp.optinet.task3">Bouwtekeningen uitlezen en aanpassen</li>
+                                <li data-i18n="exp.optinet.task4">RJ45 metingen en keuringen uitvoeren</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 data-i18n="exp.loods5.title">Verkooppersoneel</h3>
+                                <span class="company">Loods 5</span>
+                                <span class="period" data-i18n="exp.loods5.period">2018 - 2019</span>
+                                <span class="location">Amersfoort</span>
+                            </div>
+                            <p class="company-description" data-i18n="exp.loods5.desc">
+                                Een grote loods waar veel kleine winkels een ruimte kunnen huren om verkoopwaar te verkopen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 data-i18n="exp.flamco.title">Productie Medewerker & Onderhoudsmonteur</h3>
+                                <span class="company">Flamco BV</span>
+                                <span class="period" data-i18n="exp.flamco.period">2011 - 2014</span>
+                            </div>
+                            <p class="company-description" data-i18n="exp.flamco.desc">
+                                Flamco produceert voornamelijk expansievaten en installatie onderdelen.
+                            </p>
+                            <ul>
+                                <li data-i18n="exp.flamco.task1">Productie werkzaamheden</li>
+                                <li data-i18n="exp.flamco.task2">Onderhoudsmonteur op elektra en mechatronica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opleidingen Section -->
+        <section id="opleidingen" class="section section-alt">
+            <div class="container">
+                <h2 data-i18n="education.title">Opleidingen & Certificeringen</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">🎓</div>
+                        <h3 data-i18n="edu.aeres.title">Vakbekwaam Medewerker Dierverzorging</h3>
+                        <p class="institution" data-i18n="edu.aeres.institution">Aeres MBO Barneveld</p>
+                        <p class="period" data-i18n="edu.aeres.period">2015 - 2019</p>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-icon">📜</div>
+                        <h3 data-i18n="edu.dirksen.title">KVD, HVD, ISRA Cursus</h3>
+                        <p class="institution" data-i18n="edu.dirksen.institution">Dirksen Opleidingen</p>
+                        <p class="period" data-i18n="edu.dirksen.period">2014</p>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-icon">🎨</div>
+                        <h3 data-i18n="edu.roc1.title">Interactieve Vormgeving / Art & Design</h3>
+                        <p class="institution" data-i18n="edu.roc1.institution">ROC Midden Nederland</p>
+                        <p class="period" data-i18n="edu.roc1.period">2013 - 2014</p>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-icon">💻</div>
+                        <h3 data-i18n="edu.roc2.title">ICT</h3>
+                        <p class="institution" data-i18n="edu.roc2.institution">ROC Midden Nederland</p>
+                        <p class="period" data-i18n="edu.roc2.period">2012 - 2013</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobby's & Nevenactiviteiten Section -->
+        <section id="hobbys" class="section">
+            <div class="container">
+                <h2 data-i18n="hobbies.title">Hobby's & Nevenactiviteiten</h2>
+                
+                <div class="hobbies-grid">
+                    <!-- Nevenactiviteiten -->
+                    <div class="hobby-card featured">
+                        <div class="hobby-icon">🎯</div>
+                        <div class="hobby-content">
+                            <h3 data-i18n="hobby.lorcana.title">Online Evenement Organisator - Disney Lorcana</h3>
+                            <p class="organization">Ravensburger / Pixelborn</p>
+                            <p class="period" data-i18n="hobby.lorcana.period">2023 - Heden</p>
+                            <p data-i18n="hobby.lorcana.desc">Organiseren van online Lorcana toernooien via Discord en Pixelborn. Sinds 2025 volledig gericht op online evenementen.</p>
+                            <div class="hobby-tags">
+                                <span class="hobby-tag">Discord</span>
+                                <span class="hobby-tag">Pixelborn</span>
+                                <span class="hobby-tag">Community Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card featured">
+                        <div class="hobby-icon">📈</div>
+                        <div class="hobby-content">
+                            <h3 data-i18n="hobby.trading.title">Trading Card Handel</h3>
+                            <p class="organization">CardMarket</p>
+                            <p data-i18n="hobby.trading.desc">Inkoop en verkoop van trading cards met focus op marktanalyse en trends.</p>
+                            <div class="hobby-tags">
+                                <span class="hobby-tag" data-i18n="hobby.tag.marketanalysis">Marktanalyse</span>
+                                <span class="hobby-tag" data-i18n="hobby.tag.trends">Trends Analyse</span>
+                                <span class="hobby-tag" data-i18n="hobby.tag.buysell">Inkoop & Verkoop</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Hobby's -->
+                    <div class="hobby-card featured">
+                        <div class="hobby-icon">💻</div>
+                        <div class="hobby-content">
+                            <h3 data-i18n="hobby.webdev.title">Website Development</h3>
+                            <p data-i18n="hobby.webdev.desc">Bouwen van websites als hobby en om vaardigheden te ontwikkelen.</p>
+                            <div class="hobby-tags">
+                                <span class="hobby-tag">HTML</span>
+                                <span class="hobby-tag">CSS</span>
+                                <span class="hobby-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🔧</div>
+                        <div class="hobby-content">
+                            <h3 data-i18n="hobby.homelab.title">Home Lab & Tinkering</h3>
+                            <p data-i18n="hobby.homelab.desc">Experimenteren met servers, netwerken en nieuwe technologieën thuis.</p>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card featured">
+                        <div class="hobby-icon">🤖</div>
+                        <div class="hobby-content">
+                            <h3 data-i18n="hobby.bots.title">Game Addon Development</h3>
+                            <p class="period" data-i18n="hobby.bots.period">2008 - Heden</p>
+                            <p data-i18n="hobby.bots.desc">Jarenlange ervaring met het ontwikkelen van automatisering scripts en addons voor games.</p>
+                            <ul class="hobby-list">
+                                <li data-i18n="hobby.bots.rs"><strong>RuneScape</strong> (2008-2015): Addons in JavaScript en C#</li>
+                                <li data-i18n="hobby.bots.wow"><strong>World of Warcraft</strong> (2014-2016): Addons in LUA & XML</li>
+                                <li data-i18n="hobby.bots.gw"><strong>Guild Wars</strong> (2010-heden): AutoIT/Pascal, nu actief in PY4GW community project (Python)</li>
+                            </ul>
+                            <div class="hobby-tags">
+                                <span class="hobby-tag">Python</span>
+                                <span class="hobby-tag">JavaScript</span>
+                                <span class="hobby-tag">C#</span>
+                                <span class="hobby-tag">LUA</span>
+                                <span class="hobby-tag">AutoIT</span>
+                                <span class="hobby-tag" data-i18n="skill.automation">Automatisering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🎮</div>
+                        <div class="hobby-content">
+                            <h3 data-i18n="hobby.videogames.title">Videogames</h3>
+                            <p data-i18n="hobby.videogames.desc">Gaming als ontspanning en sociale activiteit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gaming Hobby's -->
+                    <div class="hobby-card featured">
+                        <div class="hobby-icon">🏆</div>
+                        <div class="hobby-content">
+                            <h3 data-i18n="hobby.competitive.title">Competitief Disney Lorcana Speler</h3>
+                            <p data-i18n="hobby.competitive.desc">Actief deelnemer aan toernooien door heel Nederland en daarbuiten.</p>
+                            <div class="hobby-tags">
+                                <span class="hobby-tag" data-i18n="hobby.tag.strategic">Strategisch Denken</span>
+                                <span class="hobby-tag" data-i18n="hobby.tag.deckbuilding">Deckbuilding</span>
+                                <span class="hobby-tag" data-i18n="hobby.tag.meta">Meta-analyse</span>
+                                <span class="hobby-tag" data-i18n="hobby.tag.trendpred">Trend Voorspelling</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🎲</div>
+                        <div class="hobby-content">
+                            <h3 data-i18n="hobby.tabletop.title">Tabletop Games</h3>
+                            <p data-i18n="hobby.tabletop.desc">Bordspellen en tabletop RPG's spelen met vrienden.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projecten Section -->
+        <section id="projecten" class="section">
+            <div class="container">
+                <h2 data-i18n="projects.title">Projecten</h2>
+                <p class="section-intro" data-i18n="projects.intro">Een selectie van mijn open-source projecten en persoonlijke werk.</p>
+                <div class="projects-grid">
+                    <a href="https://github.com/ibrodelberge-commits/Py4GW" target="_blank" class="project-card featured">
+                        <div class="project-header">
+                            <span class="project-icon">🐍</span>
+                            <span class="project-badge" data-i18n="projects.badge.community">Community Project</span>
+                        </div>
+                        <h3>PY4GW</h3>
+                        <p data-i18n="projects.py4gw.desc">Python framework voor Guild Wars automatisering. Actief contributor aan dit community-gedreven project.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Automation</span>
+                            <span class="project-tag">Gaming</span>
+                        </div>
+                        <div class="project-link">
+                            <span class="github-icon">📂</span>
+                            <span data-i18n="projects.viewongithub">Bekijk op GitHub</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/ibrodelberge-commits/lorcamersfoort" target="_blank" class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">🎴</span>
+                            <span class="project-badge" data-i18n="projects.badge.personal">Persoonlijk Project</span>
+                        </div>
+                        <h3>LorcAmersfoort</h3>
+                        <p data-i18n="projects.lorcana.desc">Website voor de Disney Lorcana community in Amersfoort. Evenementen, rankings en community features.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Web Development</span>
+                            <span class="project-tag">Community</span>
+                            <span class="project-tag">Lorcana</span>
+                        </div>
+                        <div class="project-link">
+                            <span class="github-icon">📂</span>
+                            <span data-i18n="projects.viewongithub">Bekijk op GitHub</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/ibrodelberge-commits/cv-website" target="_blank" class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">🌐</span>
+                            <span class="project-badge" data-i18n="projects.badge.personal">Persoonlijk Project</span>
+                        </div>
+                        <h3 data-i18n="projects.cvwebsite.title">CV Website</h3>
+                        <p data-i18n="projects.cvwebsite.desc">Deze website! Gebouwd met pure HTML, CSS en JavaScript. Dark/light mode, meertalig, en volledig responsive.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Responsive</span>
+                        </div>
+                        <div class="project-link">
+                            <span class="github-icon">📂</span>
+                            <span data-i18n="projects.viewongithub">Bekijk op GitHub</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
+            <!-- Decorative Radial Pulse Background -->
+            <div class="radial-pulse-bg" aria-hidden="true">
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring"></div>
+            </div>
+            <div class="container">
+                <h2 data-i18n="contact.title">Contact</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <span class="contact-icon">✉️</span>
+                        <h3 data-i18n="contact.email">E-mail</h3>
+                        <a href="mailto:ivor_rodel@hotmail.nl">ivor_rodel@hotmail.nl</a>
+                    </div>
+                    <div class="contact-card linkedin-item">
+                        <span class="contact-icon">💼</span>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/ivor-rodel-500b6ab3/" target="_blank" data-i18n="contact.linkedin">Bekijk mijn profiel</a>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">📍</span>
+                        <h3 data-i18n="contact.locationLabel">Locatie</h3>
+                        <p data-i18n="contact.location">Amersfoort, Nederland</p>
+                    </div>
+                </div>
+                <div class="download-section">
+                    <button class="download-pdf-btn" onclick="window.print()">
+                        <span class="icon">📄</span>
+                        <span data-i18n="contact.download">Download als PDF</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2026 Ivor Rödel - IT Professional | Datamanagement & Applicatiebeheer</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        (function() {
+            const toggle = document.getElementById('themeToggle');
+            const html = document.documentElement;
+            
+            // Check for saved preference (dark mode is default)
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Only set light theme if explicitly saved as light
+            if (savedTheme === 'light') {
+                html.setAttribute('data-theme', 'light');
+            }
+            // Dark mode is default (no data-theme attribute needed, uses :root)
+            
+            // Toggle theme on button click
+            toggle.addEventListener('click', () => {
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                
+                if (newTheme === 'dark') {
+                    html.removeAttribute('data-theme');
+                } else {
+                    html.setAttribute('data-theme', newTheme);
+                }
+                localStorage.setItem('theme', newTheme);
+            });
+        })();
+    </script>
+    <script src="translations.js"></script>
+    
+    <!-- Active Nav Script -->
+    <script>
+        (function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
+            
+            // Create Intersection Observer
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -60% 0px',
+                threshold: 0
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Remove active class from all links
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        
+                        // Add active class to corresponding link
+                        const activeLink = document.querySelector(`.main-nav a[href="#${entry.target.id}"]`);
+                        if (activeLink) {
+                            activeLink.classList.add('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all sections
+            sections.forEach(section => observer.observe(section));
+            
+            // Also update active state on click
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
