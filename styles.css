@@ -252,11 +252,16 @@ ul {
 .profile-photo {
     width: 120px;
     height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    min-width: 120px;
+    min-height: 120px;
     border-radius: 50%;
     border: 3px solid var(--accent-blue);
     object-fit: cover;
     object-position: center 20%;
     box-shadow: var(--glow-blue);
+    display: block;
 }
 
 .hero h1 {
